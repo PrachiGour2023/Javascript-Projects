@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    /* background-color: #E3F2FD; */
+}
+
+body {
+    background-color: #E3F2FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.wrapper {
+    background: #293447;
+    width: 65vmin;
+    height: 60vmin;
+    /* color: #fff; */
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 27px;
+    color: #B8C6DC;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    background: #ff003d;
+}
+
+.play-board .head {
+    background: #b1b3ff;
+}
+.controls {
+    background: #293447;
+    display: none;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        background: #293447;
+        width: 65vmin;
+        height: 60vmin;
+        /* color: #fff; */
+    }
+    
+    .game-details {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 27px;
+        color: #B8C6DC;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .controls {
+        background: #293447;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .controls i {
+        color: #b8c6dc;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.4rem;
+        width: calc(100% / 4);
+        cursor: pointer;
+        border-right: 1px solid black;
+    }
+    
+}
